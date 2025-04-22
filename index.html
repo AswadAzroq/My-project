@@ -10,6 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="message-card" data-aos="fade-up">
@@ -19,14 +20,17 @@
     </div>
 
     <div class="background-image">
-      <img src="https://drive.google.com/uc?export=view&id=1iUlGzmE73hz_FSKkrX6CGHebYSaklpX7" alt="Birthday Image" />
+      <img src="https://drive.google.com/uc?export=view&id=1iUlGzmE73hz_FSKkrX6CGHebYSaklpX7" alt="Background Image" />
     </div>
 
     <script>
-      AOS.init(); // Inisialisasi AOS
+      // Inisialisasi AOS untuk animasi saat scroll
+      AOS.init({ once: true });
 
+      // Fungsi love button
       function showLove() {
         alert("Terima kasih telah memberikan love!");
+        document.querySelector('.message-card').style.backgroundColor = 'lightpink'; // Efek setelah klik
       }
     </script>
   </body>
