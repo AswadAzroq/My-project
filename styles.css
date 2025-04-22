@@ -1,0 +1,56 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.message-card {
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.message-card h1 {
+  font-size: 24px;
+  color: #6a1b9a;
+}
+
+.message-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+button {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #8e24aa;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://drive.google.com/uc?export=view&id=1iUlGzmE73hz_FSKkrX6CGHebYSaklpX7') no-repeat center center/cover;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
+}
